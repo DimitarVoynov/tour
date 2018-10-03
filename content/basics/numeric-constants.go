@@ -18,6 +18,7 @@ func needFloat(x float64) float64 {
 }
 
 func main() {
+	//fmt.Println(needInt(Big)) //prints: "constant 1267650600228229401496703205376 overflows int"
 	fmt.Println(needInt(Small))
 	fmt.Println(needFloat(Small))
 	fmt.Println(needFloat(Big))
