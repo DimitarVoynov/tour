@@ -17,6 +17,6 @@ func main() {
 	default:
 		// freebsd, openbsd,
 		// plan9, windows...
-		fmt.Printf("%s.", os)
+		fmt.Printf("%s.", os) //%s	the uninterpreted bytes of the string or slice
 	}
 }

@@ -9,7 +9,7 @@ import (
 
 func main() {
 	t := time.Now()
-	switch {
+	switch { //This construct can be a clean way to write long if-then-else chains.
 	case t.Hour() < 12:
 		fmt.Println("Good morning!")
 	case t.Hour() < 17:
