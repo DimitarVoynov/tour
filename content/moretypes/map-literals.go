@@ -14,7 +14,7 @@ var m = map[string]Vertex{
 	},
 	"Google": Vertex{
 		37.42202, -122.08408,
-	},
+	}, //note the comma here!
 }
 
 func main() {

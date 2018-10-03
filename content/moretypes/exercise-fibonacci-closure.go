@@ -4,9 +4,13 @@ package main
 
 import "fmt"
 
-// fibonacci is a function that returns
-// a function that returns an int.
+// fibonacci is a function that returns a function that returns an int.
 func fibonacci() func() int {
+	f, g := 1, 0
+	return func() int {
+		f, g = g, f+g
+		return f
+	}
 }
 
 func main() {

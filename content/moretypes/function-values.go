@@ -1,5 +1,6 @@
 // +build OMIT
 
+//revisit!!!
 package main
 
 import (
@@ -7,6 +8,7 @@ import (
 	"math"
 )
 
+//Function values may be used as function arguments and return values!!!
 func compute(fn func(float64, float64) float64) float64 {
 	return fn(3, 4)
 }
