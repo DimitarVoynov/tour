@@ -4,6 +4,8 @@ package main
 
 import "fmt"
 
+//By default, sends and receives block until the other side is ready. This allows goroutines to synchronize without explicit locks or condition variables.
+
 func sum(s []int, c chan int) {
 	sum := 0
 	for _, v := range s {

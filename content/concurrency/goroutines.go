@@ -15,6 +15,9 @@ func say(s string) {
 }
 
 func main() {
+	// The evaluation of f, x, y, and z happens in the current goroutine and the execution of f happens in the new goroutine.
+
+	// Goroutines run in the same address space, so access to shared memory must be synchronized
 	go say("world")
 	say("hello")
 }
