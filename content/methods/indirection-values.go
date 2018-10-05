@@ -25,6 +25,6 @@ func main() {
 	fmt.Println(AbsFunc(v))
 
 	p := &Vertex{4, 3}
-	fmt.Println(p.Abs())
+	fmt.Println(p.Abs()) //In this case, the method call p.Abs() is interpreted as (*p).Abs()
 	fmt.Println(AbsFunc(*p))
 }

@@ -20,7 +20,7 @@ func main() {
 	a = &v // a *Vertex implements Abser
 
 	// In the following line, v is a Vertex (not *Vertex)
-	// and does NOT implement Abser.
+	// and does NOT implement Abser so this line results in an error
 	a = v
 
 	fmt.Println(a.Abs())

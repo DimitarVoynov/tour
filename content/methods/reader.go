@@ -2,6 +2,12 @@
 
 package main
 
+// The io.Reader interface has a Read method:
+
+// func (T) Read(b []byte) (n int, err error)
+
+// Read populates the given byte slice with data and returns the number of bytes populated and an error value. It returns an io.EOF error when the stream ends.
+
 import (
 	"fmt"
 	"io"

@@ -4,6 +4,12 @@ package main
 
 import "fmt"
 
+// One of the most ubiquitous interfaces is Stringer defined by the fmt package.
+
+// type Stringer interface {
+//     String() string
+// }
+
 type Person struct {
 	Name string
 	Age  int

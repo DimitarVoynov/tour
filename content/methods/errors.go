@@ -7,14 +7,19 @@ import (
 	"time"
 )
 
+// The error type is a built-in interface similar to fmt.Stringer:
+
+// type error interface {
+//     Error() string
+// }
+
 type MyError struct {
 	When time.Time
 	What string
 }
 
 func (e *MyError) Error() string {
-	return fmt.Sprintf("at %v, %s",
-		e.When, e.What)
+	return fmt.Sprintf("at %v, %s", e.When, e.What)
 }
 
 func run() error {
